@@ -1,2 +1,8 @@
+com\br\fiap\skill_match\controller\TeamController.class
+com\br\fiap\skill_match\model\Team.class
+com\br\fiap\skill_match\controller\FeedbackController.class
 com\br\fiap\skill_match\model\User.class
 com\br\fiap\skill_match\controller\UserController.class
+com\br\fiap\skill_match\SkillMatchApplication.class
+com\br\fiap\skill_match\model\Feedback.class
+com\br\fiap\skill_match\model\TeamStatus.class
