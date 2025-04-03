@@ -1,23 +1,23 @@
 package com.br.fiap.skill_match.model;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
 public class User {
 
     private Long id;
+
+    @NotBlank(message = "Nome é obrigatório")
     private String nome;
+
+    @Email(message = "Email inválido")
+    @NotBlank(message = "Email é obrigatório")
     private String email;
+
+    @NotBlank(message = "Senha é obrigatória")
+    @Size(min = 6, message = "A senha deve ter no mínimo 6 caracteres")
     private String senha;
-
-    // Construtor padrão
-    public User() {
-    }
-
-    // Construtor com campos
-    public User(Long id, String nome, String email, String senha) {
-        this.id = id;
-        this.nome = nome;
-        this.email = email;
-        this.senha = senha;
-    }
 
     // Getters e Setters
 
@@ -53,4 +53,3 @@ public class User {
         this.senha = senha;
     }
 }
-
